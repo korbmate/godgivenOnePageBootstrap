@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+}
+
+.pageName {
+  color: white;
+  font-weight: lighter;
+  font-size: 4rem;
+  margin: 10vh 0;
+}
+
+.bigText {
+  color: white;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin: 5% 0;
+}
+
+.midText{
+  color: white;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin: 2% 0;
+}
+
+.mediaCol {
+  margin: 3% 0;
+  padding: 0;
+}
+
+.aboutUsCol {
+  height: 80vh;
+  margin: 3% 0;
+  padding: 0;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1;
+  border-right: 1;
+  border-style: solid;
+  border-color: white;
+  background-color: rgba(10, 10, 10, 0.9);
+}
+
+.aboutUsParagraph {
+  color: white;
+  height: 100%;
+  padding: 3%;
+  margin: 0;
+}
+
+.social-links-container .social-link svg {
+  color: #fff;
+  width: 7vh;
+  height: 7vh;
+  margin: 7vh 3vh 7vh 3vh;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+.card{
+  border-radius: 0;
+  margin: 2vh 0;
+}
+
+.card-header{
+  height: 30vh;
+}
+
+.mercHeader{
+  min-height: 50vh;
+}
+
+.card-body{
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: white;
+  background-color: rgb(5, 5, 5);
+}
+
+.cardTitle{
+  font-weight: lighter;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.card-footer{
+  height: 30vh;
+  overflow: hidden;
+  background-color: rgb(5, 5, 5);
+}
+
+.cardParagraph{
+  font-weight: lighter;
+  color: white;
+  font-size: 1.3rem;
+}
+
+@keyframes backgroundImageAnimation {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+    filter: brightness(100%);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(1px);
+    filter: brightness(120%);
+  }
+}
+
+@keyframes backgroundImageCoverAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+#sectionIdBackgroundImage {
+  position: fixed;
+  width: 100%;
+  /*background-image: url(../images/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  height: 100vh;
+  background-position: center center;
+  animation-name: backgroundImageAnimation;
+  animation-duration: 5s;
+}
+
+#sectionIdBackgroundImageCover {
+  position: absolute;
+  width: 100%;
+  background-image: url(../images/godgivenLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  opacity: 0.2;
+  animation-name: backgroundImageCoverAnimation;
+  animation-duration: 5s;
+}
+
+#sectionPage {
+  position: absolute;
+  width: 100%;
+}
+
+#sectionHomePage {
+  position: relative;
+}
+
+#sectionMusicPage {
+  position: relative;
+  margin-top: 100vh;
+  text-align: -webkit-center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#sectionAboutUsPage {
+  position: relative;
+  padding: 5%;
+  text-align: -webkit-center;
+  width: 100%;
+}
+
+#attisAboutUs {
+  background-image: url(../images/profile/atis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#andrewAboutUs {
+  background-image: url(../images/profile/andrew.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#mateAboutUs {
+  background-image: url(../images/profile/mate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#szikeAboutUs {
+  background-image: url(../images/profile/szike.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#sectionNewsPage {
+  position: relative;
+  padding: 2% 2% 10% 2%;
+  text-align: -webkit-center;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+#firstNewsHeader{
+  background-image: url(../images/news/brazilianTime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#seccondNewsHeader{
+  background-image: url(../images/news/apocalypse.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#thirdNewsHeader{
+  background-image: url(../images/news/metalperver.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#sectionTourDatesPage{
+  position: relative;
+  padding: 2% 2% 10% 2%;
+  text-align: -webkit-center;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.7);
+}
+
+#sectionMerchPage{
+  position: relative;
+  padding: 2% 2% 5% 2%;
+  text-align: -webkit-center;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+#womanFront{
+  background-image: url(../images/merch/womanFront.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#womanBack{
+  background-image: url(../images/merch/womanBack.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#manFront{
+  background-image: url(../images/merch/manFront.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#manBack{
+  background-image: url(../images/merch/manBack.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#sectionContactPage{
+  position: relative;
+  padding: 2% 2% 2% 2%;
+  text-align: -webkit-center;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.7);
+}
+
+@media only screen and (max-width: 768px) {
+  #myVideo {
+    margin-left: -85%;
+    height: 100vh;
+    position: relative;
+  }
+
+  #sectionIdBackgroundImageCover {
+    background-size: contain;
+    max-height: 70vh;
+    min-width: 100%;
+    margin-top: 25vh;
+  }
+}
